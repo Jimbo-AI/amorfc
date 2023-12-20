@@ -1,0 +1,109 @@
++ hola
+- _saludo_
+
++ [*] mi nombre es [*]
+- _nombre_
++ [*] me llamo [*]
+- _nombre_
++ [*] soy [*]
+- _nombre_
++ [*] me dicen [*]
+- _nombre_
++ [*] me llaman [*]
+- _nombre_
+
++ informes
+- _informes_
+
++ 1p
+- _primaria_
+
++ 2s
+- _secundaria_
+
++ 3b
+- _bachillerato_
+
++ cita
+- _cita1_
+
++ date*
+- _cita2_
+
++ time
+- _cita3_
+
++ confirm
+- _cita1_
+
++ noconfirm
+- No te preocupes, puedes generar una cita en cualquier momento con solo escribir *menu*.
+
+
+! var lunes_a_viernes = Nuestro horario de atención es de Lunes a Viernes, de 8:00 am a 6:00 pm.
+! var fin_de_semana = El fin de semana estamos cerrados, pero puedes enviar un correo electrónico y te responderemos el lunes.
+! var telefono = Puedes contactarnos al +52 222 233 6647
+! var direccion = Estamos ubicados en 14 Sur no 5515 Colonia Jardines de San Manuel
+! var cita = Para generar una cita, necesito: tu nombre, correo, y teléfono. También te proporcionaré un estimado de las horas disponibles.
+
++ [*] colegiaturas [*]
+- Las colegiaturas en nuestra institución están diseñadas para garantizar una educación de calidad para todos nuestros estudiantes. Aquí te proporciono un desglose detallado de las mismas:
+^ **Secundaria:**
+^ La colegiatura para el nivel de secundaria es de $1,000 pesos mensuales. Esta tarifa ha sido establecida considerando una serie de factores como la infraestructura, el material educativo, la capacitación continua de nuestros docentes y los programas extracurriculares. Buscamos que nuestros alumnos de secundaria tengan una formación integral y estén preparados para enfrentar los desafíos del nivel medio superior.
+^ **Bachillerato:**
+^ En cuanto al nivel de bachillerato, la colegiatura es de $1,200 pesos mensuales. Este monto refleja la inversión en herramientas y recursos más avanzados que son esenciales para este nivel educativo. Además, en bachillerato se incorporan programas y talleres especializados que buscan brindar a los estudiantes las habilidades y conocimientos necesarios para ingresar a la educación superior o al mercado laboral. 
+^ Es importante mencionar que ambas colegiaturas han sido fijadas tras un análisis exhaustivo, con el objetivo de garantizar la mejor relación calidad-precio para nuestras familias. Si tienes alguna pregunta o requieres más detalles sobre los pagos, no dudes en contactarnos.
+
++ [*] inscripciones [*]
+- Las inscripciones para el próximo ciclo escolar comenzarán en abril. Puedes revisar los requisitos en nuestro sitio web o contactarnos directamente.
+
++ [*] planes de estudio [*]
+- Ofrecemos diferentes planes de estudio desde preescolar hasta preparatoria.
+
++ [*] (ubicacion|direccion) [*]
+- <bot direccion>
+
++ [*] telefono [*]
+- <bot telefono>
+
++ [*] pagos [*]
+- Te puedo enviar un link de pago con tu 
+
++ [*] cita [*]
+- <bot cita>
+
++ [*] asistencia a padres [*]
+- Si eres padre de familia y tienes algún problema o inquietud relacionada con la escuela, cuentanos tu problema.
+
++ [*] lunes [*]
+- <bot lunes_a_viernes>
+
++ [*] martes [*]
+- <bot lunes_a_viernes>
+
++ [*] miercoles [*]
+- <bot lunes_a_viernes>
+
++ [*] jueves [*]
+- <bot lunes_a_viernes>
+
++ [*] viernes [*]
+- <bot lunes_a_viernes>
+
++ [*] sabado [*]
+- <bot fin_de_semana>
+
++ [*] domingo [*]
+- <bot fin_de_semana>
+
++ como estas
+@ hola
+
++ hay alguien*
+@ hola
+
++ [*] (horario|horarios|dias|abierto) [*]
+- <bot lunes_a_viernes> \n <bot fin_de_semana>
+
++ *
+- _AI_
